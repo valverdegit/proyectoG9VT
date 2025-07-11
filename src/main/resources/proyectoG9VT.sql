@@ -5,7 +5,7 @@ CREATE SCHEMA proyectoG9VT ;
 
 create user 'usuario'@'%' identified by 'clave_usuario';
 
-
+/*Se asignan los prvilegios sobr ela base de datos PoryectoG9VT al usuario creado */
 /*Se asignan los prvilegios sobr ela base de datos PoryectoG9VT al usuario creado */
 grant all privileges on techshop.* to 'usuario¿'@'%';
 flush privileges;
