@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml"
+       xmlns:th="http://www.thymeleaf.org"
+       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+    <head th:replace="~{layout/plantilla :: head}"/>
+
+    
+        <!-- fragmento 1 para Agregar Favorito a ventana modal -->
+        <section th:fragment="agregarFavoritos">
+            <!-- Button trigger modal -->
+            <div class="row py-4 mb-2 bg-light">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <button type="submit" class="btn btn-primary">
+                    <i class="fa-solid fa-star"></i> [[#{accion.favoritos}]]
+                    </button>
+                </div>
+            <div class="row py-4 mb-2 bg-light">
+                <div class="col-md-1"></div>
+                <div class="col-md-3">
+                    <button type="eliminar" class="btn btn-primary">
+                    <i class="fa-regular fa-star"></i> [[#{accion.eliminarfav}]]
+                    </button>
+                </div>
+            </div>
+        </section>    
+           
+
+       
+
+    
+
+</html>
